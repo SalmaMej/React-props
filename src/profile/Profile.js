@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 // import './App.css';
 
 function Profile(props) {
+  function handleName(){
+    alert (props.fullName)
+  };
   return (    
     <>
         <div>
@@ -14,6 +17,7 @@ function Profile(props) {
             <br/>
             <h4>{props.profession}</h4>
         </div>
+        <button onClick = {handleName}>Alert</button>
     </>
   )
 }
